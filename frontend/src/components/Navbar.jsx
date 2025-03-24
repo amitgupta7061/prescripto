@@ -45,7 +45,10 @@ const Navbar = () => {
                 </div>
             </div>
         </div> : 
-        <Link to={'/login'} className='bg-primary text-white px-8 py-2 rounded-full font-light hidden md:block'>Create Account</Link>
+            <>
+                <Link to={'/login'} className='bg-primary text-white px-8 py-2 rounded-full font-light hidden md:block'>Create Account</Link>
+                <a href='https://prescripto-admin-9vcz.onrender.com/' target='_blank' className='bg-primary text-white px-8 py-2 rounded-full font-light block'>Admin</a>
+            </>
         }
         <img onClick={() => setShowMenu(true)} className='w-6 md:hidden' src={assets.menu_icon} alt="" />
 
